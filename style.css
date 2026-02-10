@@ -1,0 +1,114 @@
+/* ===============================
+   Global
+================================ */
+:root {
+  --dark-blue: #0f172a;     /* navy */
+  --mid-blue: #1e3a8a;      /* deep blue */
+  --light-blue: #e0f2fe;    /* soft blue */
+  --grey-bg: #f1f5f9;       /* light grey */
+  --card-bg: #ffffff;
+  --text-dark: #0f172a;
+}
+
+body {
+  background-color: var(--grey-bg);
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+}
+
+/* ===============================
+   Navbar
+================================ */
+.navbar {
+  background-color: var(--dark-blue) !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #c7d2fe !important;
+  font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+/* ===============================
+   Buttons
+================================ */
+.btn-light {
+  background-color: #ffffff;
+  color: var(--dark-blue);
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.btn-light:hover {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}
+
+/* ===============================
+   Sections
+================================ */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* ===============================
+   Cards (Portfolio)
+================================ */
+.card {
+  background-color: var(--card-bg);
+  border: none;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+}
+
+.card-img-top {
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.card-title {
+  color: var(--mid-blue);
+  font-weight: 600;
+}
+
+/* ===============================
+   About Page Text
+================================ */
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ===============================
+   Footer
+================================ */
+footer {
+  background-color: #e5e7eb;
+  font-size: 0.9rem;
+  color: #475569;
+}
